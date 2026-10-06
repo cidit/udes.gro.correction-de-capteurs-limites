@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="oNhthUxggjCr3dTRT8h9">
-    <mxGraphModel dx="1201" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1201" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0" adaptiveColors="none">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="yP_8mXfGc5Mjo7A9aUun-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="390" width="390" x="150" y="30" as="geometry" />
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="440" width="220" x="235" y="20" as="geometry" />
         </mxCell>
         <mxCell id="yP_8mXfGc5Mjo7A9aUun-4" edge="1" parent="1" source="yP_8mXfGc5Mjo7A9aUun-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="yP_8mXfGc5Mjo7A9aUun-3">
           <mxGeometry relative="1" as="geometry" />
@@ -16,26 +16,44 @@
         <mxCell id="yP_8mXfGc5Mjo7A9aUun-11" edge="1" parent="1" source="yP_8mXfGc5Mjo7A9aUun-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="yP_8mXfGc5Mjo7A9aUun-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yP_8mXfGc5Mjo7A9aUun-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Sélectionner la valeur centrale et l&#39;affecter à la variable médiane" vertex="1">
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="mediane = valeur centrale de la liste" vertex="1">
           <mxGeometry height="60" width="120" x="285" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="yP_8mXfGc5Mjo7A9aUun-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Liste de 3 nombres" vertex="1">
-          <mxGeometry height="60" width="120" x="80" y="195" as="geometry" />
-        </mxCell>
-        <mxCell id="yP_8mXfGc5Mjo7A9aUun-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Valeur médiane" vertex="1">
-          <mxGeometry height="60" width="120" x="500" y="195" as="geometry" />
         </mxCell>
         <mxCell id="yP_8mXfGc5Mjo7A9aUun-8" edge="1" parent="1" source="yP_8mXfGc5Mjo7A9aUun-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="yP_8mXfGc5Mjo7A9aUun-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yP_8mXfGc5Mjo7A9aUun-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="" vertex="1">
-          <mxGeometry height="50" width="50" x="320" y="50" as="geometry" />
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="315" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="yP_8mXfGc5Mjo7A9aUun-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=light-dark(#000000,#FFFFFF);fillStyle=solid;" value="" vertex="1">
-          <mxGeometry height="50" width="50" x="320" y="350" as="geometry" />
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=light-dark(#FFFFFF,#000000);fillStyle=solid;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="305" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="yP_8mXfGc5Mjo7A9aUun-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="" vertex="1">
-          <mxGeometry height="40" width="40" x="325" y="355" as="geometry" />
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillStyle=solid;gradientColor=none;fillColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="315" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-13" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="215" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-14" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="435" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-20" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="475" y="290" as="sourcePoint" />
+            <mxPoint x="565" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-21" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="124" y="134" as="sourcePoint" />
+            <mxPoint x="214" y="134" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Liste de 3 nombres" vertex="1">
+          <mxGeometry height="30" width="60" x="135" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yP_8mXfGc5Mjo7A9aUun-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Valeur médiane" vertex="1">
+          <mxGeometry height="30" width="60" x="485" y="256" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

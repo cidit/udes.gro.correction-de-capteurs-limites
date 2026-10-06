@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="j2FXR_us0f1F0CEWhqDL">
-    <mxGraphModel dx="1457" dy="1181" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0" adaptiveColors="none">
+    <mxGraphModel dx="1413" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0" adaptiveColors="none">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sJDLQj4QMDj1RpD7fd9P-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="680" width="1160" x="330" y="90" as="geometry" />
+        <mxCell id="T4dVVfXmAdeQglP1BtFu-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="740" width="1160" x="330" y="50" as="geometry" />
         </mxCell>
         <mxCell id="sJDLQj4QMDj1RpD7fd9P-19" edge="1" parent="1" source="INWenRsqHez0zo9z9g_Z-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sJDLQj4QMDj1RpD7fd9P-17">
           <mxGeometry relative="1" as="geometry" />
@@ -49,7 +49,7 @@
         <mxCell id="1OimbvEv8qm3sFtk9GMr-19" edge="1" parent="1" source="1OimbvEv8qm3sFtk9GMr-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1OimbvEv8qm3sFtk9GMr-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1OimbvEv8qm3sFtk9GMr-17" parent="1" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" value="taille := longueur de points" vertex="1">
+        <mxCell id="1OimbvEv8qm3sFtk9GMr-17" parent="1" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" value="taille := longueur de nombres" vertex="1">
           <mxGeometry height="60" width="120" x="380" y="410" as="geometry" />
         </mxCell>
         <mxCell id="1OimbvEv8qm3sFtk9GMr-39" edge="1" parent="1" source="1OimbvEv8qm3sFtk9GMr-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="INWenRsqHez0zo9z9g_Z-8">
@@ -131,6 +131,9 @@
         </mxCell>
         <mxCell id="sJDLQj4QMDj1RpD7fd9P-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" value="moyenne := total / nb_de_nb" vertex="1">
           <mxGeometry height="60" width="120" x="540" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="T4dVVfXmAdeQglP1BtFu-2" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;" value="nombres (liste de float)&lt;div&gt;moyenne (float)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="1175" y="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

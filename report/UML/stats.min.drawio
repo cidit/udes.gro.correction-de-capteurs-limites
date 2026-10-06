@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="j2FXR_us0f1F0CEWhqDL">
-    <mxGraphModel dx="1106" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0" adaptiveColors="none">
+    <mxGraphModel dx="1226" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0" adaptiveColors="none">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sJDLQj4QMDj1RpD7fd9P-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="700" width="830" x="330" y="90" as="geometry" />
+        <mxCell id="mR7Khr75tVt-3mz53AVX-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="680" width="830" x="330" y="90" as="geometry" />
         </mxCell>
         <mxCell id="INWenRsqHez0zo9z9g_Z-5" edge="1" parent="1" source="INWenRsqHez0zo9z9g_Z-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="INWenRsqHez0zo9z9g_Z-4" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -16,7 +16,7 @@
         <mxCell id="1OimbvEv8qm3sFtk9GMr-18" edge="1" parent="1" source="INWenRsqHez0zo9z9g_Z-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1OimbvEv8qm3sFtk9GMr-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="INWenRsqHez0zo9z9g_Z-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" value="nombre = nombre[0]" vertex="1">
+        <mxCell id="INWenRsqHez0zo9z9g_Z-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" value="min = nombre[0]" vertex="1">
           <mxGeometry height="60" width="120" x="380" y="270" as="geometry" />
         </mxCell>
         <mxCell id="INWenRsqHez0zo9z9g_Z-8" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="" vertex="1">
@@ -97,7 +97,7 @@
             <mxPoint x="1260" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1OimbvEv8qm3sFtk9GMr-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="nombre" vertex="1">
+        <mxCell id="1OimbvEv8qm3sFtk9GMr-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="min" vertex="1">
           <mxGeometry height="30" width="60" x="1190" y="300" as="geometry" />
         </mxCell>
         <mxCell id="sJDLQj4QMDj1RpD7fd9P-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[else]" vertex="1">
@@ -110,11 +110,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sJDLQj4QMDj1RpD7fd9P-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" value="nombre = nombre[i]" vertex="1">
+        <mxCell id="sJDLQj4QMDj1RpD7fd9P-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" value="min = nombre[i]" vertex="1">
           <mxGeometry height="60" width="120" x="990" y="530" as="geometry" />
         </mxCell>
-        <mxCell id="sJDLQj4QMDj1RpD7fd9P-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[nombre &amp;gt; nombre[i]]" vertex="1">
+        <mxCell id="sJDLQj4QMDj1RpD7fd9P-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[min &amp;gt; nombre[i]]" vertex="1">
           <mxGeometry height="30" width="130" x="830" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="mR7Khr75tVt-3mz53AVX-1" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;" value="nombres (liste de float)&lt;div&gt;min (float)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="210" x="830" y="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
