@@ -202,7 +202,7 @@ def input_max():
 def main():
     """
     DESC: Affiche des instructions à l'utilisateur et lui demande de fournir 
-    un ficher de données lidar à filrer, un nom pour le fichier en sortie 
+    un fichier de données lidar à filrer, un nom pour le fichier en sortie 
     et un choix de méthode de filtrage. Lis le ficher de données, filtre les 
     données, écris les données filtrées dans un fichier texte et affiche des 
     statistiques liées au résultat obtenu.
