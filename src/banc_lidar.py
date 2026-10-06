@@ -3,6 +3,7 @@ from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 from sys import stdin, stdout
+from typing import TypeVar
 
 import filters
 
@@ -66,7 +67,7 @@ def parse_filter(filter_label: str) -> Data[ConfiguredFilter] | Error[str]:
         case "2":
             return Data(lambda data: filters.sliding_average(data, window_size=3))
         case "3":
-            return Data(lambda data: filters.sliding_median(data))
+            return Data(lambda data: filters.sliding_median_of_3(data))
         case other:
             return Error(f"This filter label is not recognized: {other}")
 
@@ -79,6 +80,31 @@ def load_filter(filter_label) -> Data[ConfiguredFilter] | Error[str] | NeedsProm
             return Error(e)
         case Data(d):
             return Data(d)
+
+
+def prompt[D, E](
+    question: str,
+    validator: Callable[[str], Data[D] | Error[E]],
+    validator_failed_msg: None | Callable[[Error[E]], str] = None,
+    default: None | D = None,
+) -> Data[D] | Back | Quit:
+    while True:
+        print(question)
+        print("- q for Quit, b for Back")
+        if default:
+            print(f"- Enter for default ({default})")
+        input_text = input("> ").strip()
+        if input_text == "q":
+            return Quit()
+        if input_text == "b":
+            return Back()
+        match validator(input_text):
+            case Error(e):
+                if validator_failed_msg:
+                    print(validator_failed_msg(Error(e)))
+                continue
+            case Data(d):
+                return Data(d)
 
 
 def prompt_for_input_file() -> Data[list[float]] | Quit:
@@ -100,29 +126,26 @@ def prompt_for_input_file() -> Data[list[float]] | Quit:
             continue
 
 
-
 def prompt_for_filter() -> Data[ConfiguredFilter] | Quit:
     while True:
-        input_text = input(
-            "which filter? (q to quit)"
-        )
+        input_text = input("which filter? (q to quit)")
         match input_text:
             case "q":
                 return Quit()
-            case '1':
+            case "1":
                 match prompt_filter_1():
                     case Back():
                         continue
-                    case other: return other
+                    case other:
+                        return other
             case other:
                 print(f"Invalid filter name: {other}")
                 continue
 
+
 def prompt_filter_1() -> Data[ConfiguredFilter] | Quit | Back:
     while True:
-        input_text = input(
-            "specify minimum: (q to quit, b for back)"
-        )
+        input_text = input("specify minimum: (q to quit, b for back)")
         match input_text:
             case "q":
                 return Quit()
@@ -133,6 +156,7 @@ def prompt_filter_1() -> Data[ConfiguredFilter] | Quit | Back:
                     minimum = float(other)
                 except ValueError:
                     continue
+
 
 def prompt_filter_1_arg1():
     pass
@@ -149,6 +173,16 @@ def prompt_for_output_file():
             print("The entered path does not exist or is unreachable.")
             continue
 
+def validator_input_file(file_name) -> Data[list[float]] | Error[str]:
+    try:
+        with open(file_name) as f:
+            file_contents = f.readlines()
+            data = list(map(float, file_contents))
+            return Data(data)
+    except FileNotFoundError:
+        return Error("This file does not exist.")
+    except ValueError:
+        return Error("Unexpected file contents.")
 
 def main():
     parser = ArgumentParser()
@@ -167,9 +201,13 @@ def main():
             return
         case NeedsPrompting():
             should_prompt_for_output_if_not_exists = True
-            match prompt_for_input_file():
-                case Quit():
-                    print("Okay, bye.")
+            match prompt(
+                question="where is the input?",
+                validator=validator_input_file,
+                validator_failed_msg=lambda e: e.error,
+            ):
+                case Quit() | Back():
+                    print("Okay...")
                     return
                 case Data(d):
                     data = d

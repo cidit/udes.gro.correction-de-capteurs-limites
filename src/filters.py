@@ -14,7 +14,7 @@ def sliding_average(data, window_size):
     return [sum(w) / len(w) for w in filter_none]
 
 
-def sliding_median(data):
+def sliding_median_of_3(data):
     """
         Sliding Median
     """
@@ -50,4 +50,4 @@ def test_sliding_average():
 def test_sliding_median():
     input = [1, 3, 2, 4, 5, 3]
     output = [1, 2, 3, 4, 4, 3]
-    assert sliding_median(input) == output
+    assert sliding_median_of_3(input) == output
