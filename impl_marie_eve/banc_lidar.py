@@ -144,7 +144,7 @@ def input_min():
     RETOUR: Float correspondant au minimum
     """
     while True:
-        min = input("> Valeur minimum (facultatif): ").strip()
+        min = input("> Valeur minimum (facultatif; défaut = 0,5): ").strip()
 
         # Comme enter une valeur minimum est facultative, une valeur par défaut
         # est utilisée si aucune valeur n'est entrée par l'utilisateur
@@ -176,7 +176,7 @@ def input_max():
     RETOUR: Float correspondant au maximum
     """
     while True:
-        max = input("> Valeur maximum (facultatif): ").strip()
+        max = input("> Valeur maximum (facultatif; défaut = 15,0): ").strip()
 
         # Comme enter une valeur maximum est facultative, une valeur par défaut
         # est utilisée si aucune valeur n'est entrée par l'utilisateur
