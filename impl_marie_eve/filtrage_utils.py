@@ -24,12 +24,17 @@ def ordonner(liste_originelle: list[float]):
     changement = True
     while changement:
         changement = False
+        # Chaque nombre, en commençant par le deuxième, est comparé au nombre 
+        # précédant. Si le nombre précédent est plus élevé, les deux nombres sont 
+        # inversés.
         for i in range(1, len(nombres)):
             if nombres[i-1] > nombres[i]:
                 tmp = nombres[i]
                 nombres[i] = nombres[i-1]
                 nombres[i-1] = tmp
                 changement = True
+        # Tant qu'il y aura des changements, la boucle se répète. Quand
+        # il n'y en a plus, le tri de la liste est complété.
     return nombres
 
 
